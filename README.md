@@ -53,7 +53,7 @@ python -m venv venv
 venv\Scripts\activate            # Windows  (macOS/Linux: source venv/bin/activate)
 pip install -r requirements.txt
 cp .env.example .env             # then add your GROQ_API_KEY
-# place deepfake_model.h5 and SpecRNet_model.h5 in this folder (see models/README.md)
+# the trained models (deepfake_model.h5, SpecRNet_model.h5) are already included in this folder
 python main.py                   # http://localhost:8000
 ```
 
@@ -74,9 +74,8 @@ Python, TensorFlow/Keras, OpenCV, librosa, FastAPI, React, Tailwind CSS, Vite, G
 ## Project structure
 
 ```
-backend/    FastAPI service and the image, audio and video modules
+backend/    FastAPI service, the image/audio/video modules and the trained models (.h5)
 frontend/   React interface (upload pages, results, chatbot)
-models/     Where to get the trained weights
 ```
 
 ## Limitations
@@ -86,9 +85,3 @@ models/     Where to get the trained weights
 - The audio model analyses the first 4 seconds of speech.
 - The API currently allows all CORS origins and has no authentication, so it is intended for local demonstration, not public deployment.
 
-## Team
-
-Final Year Project team of three, COMSATS University Islamabad, Lahore Campus.
-- Aniya Amjad: [describe your part here]
-- [Teammate name]: [their part]
-- [Teammate name]: [their part]
