@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+/* Force all hover effects to work */
+@layer utilities {
+  /* Text colors */
+  .hover\:text-blue-600:hover {
+    color: #2563eb !important;
+  }
+  
+  .hover\:text-purple-600:hover {
+    color: #9333ea !important;
+  }
+  
+  .hover\:text-white:hover {
+    color: #ffffff !important;
+  }
+
+  /* Background colors */
+  .hover\:bg-blue-50:hover {
+    background-color: #eff6ff !important;
+  }
+  
+  .hover\:bg-blue-100:hover {
+    background-color: #dbeafe !important;
+  }
+  
+  .hover\:bg-blue-200:hover {
+    background-color: #bfdbfe !important;
+  }
+  
+  .hover\:bg-blue-700:hover {
+    background-color: #1d4ed8 !important;
+  }
+  
+  .hover\:bg-blue-800:hover {
+    background-color: #1e40af !important;
+  }
+  
+  .hover\:bg-purple-50:hover {
+    background-color: #faf5ff !important;
+  }
+  
+  .hover\:bg-purple-100:hover {
+    background-color: #f3e8ff !important;
+  }
+  
+  .hover\:bg-purple-200:hover {
+    background-color: #e9d5ff !important;
+  }
+  
+  .hover\:bg-purple-700:hover {
+    background-color: #7e22ce !important;
+  }
+  
+  .hover\:bg-gray-300:hover {
+    background-color: #d1d5db !important;
+  }
+  
+  .hover\:bg-white:hover {
+    background-color: #ffffff !important;
+  }
+
+  /* Gradient backgrounds */
+  .hover\:from-blue-600:hover {
+    --tw-gradient-from: #2563eb !important;
+    --tw-gradient-to: rgb(37 99 235 / 0) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+  }
+  
+  .hover\:to-blue-700:hover {
+    --tw-gradient-to: #1d4ed8 !important;
+  }
+  
+  .hover\:from-blue-700:hover {
+    --tw-gradient-from: #1d4ed8 !important;
+    --tw-gradient-to: rgb(29 78 216 / 0) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+  }
+  
+  .hover\:to-purple-700:hover {
+    --tw-gradient-to: #7e22ce !important;
+  }
+  
+  .hover\:from-blue-200:hover {
+    --tw-gradient-from: #bfdbfe !important;
+    --tw-gradient-to: rgb(191 219 254 / 0) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+  }
+  
+  .hover\:to-purple-200:hover {
+    --tw-gradient-to: #e9d5ff !important;
+  }
+
+  /* Border colors */
+  .hover\:border-blue-300:hover {
+    border-color: #93c5fd !important;
+  }
+
+  /* Shadows */
+  .hover\:shadow-lg:hover {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  }
+  
+  .hover\:shadow-2xl:hover {
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25) !important;
+  }
+
+  /* Scale transforms */
+  .hover\:scale-105:hover {
+    transform: scale(1.05) !important;
+  }
+  
+  .hover\:scale-110:hover {
+    transform: scale(1.10) !important;
+  }
+
+  /* Opacity */
+  .hover\:bg-opacity-30:hover {
+    --tw-bg-opacity: 0.3 !important;
+  }
+  
+  .hover\:bg-opacity-20:hover {
+    --tw-bg-opacity: 0.2 !important;
+  }
+
+  /* Group hover effects */
+  .group:hover .group-hover\:text-blue-600 {
+    color: #2563eb !important;
+  }
+  
+  .group:hover .group-hover\:text-purple-600 {
+    color: #9333ea !important;
+  }
+  
+  .group:hover .group-hover\:text-white {
+    color: #ffffff !important;
+  }
+  
+  .group:hover .group-hover\:bg-blue-200 {
+    background-color: #bfdbfe !important;
+  }
+  
+  .group:hover .group-hover\:bg-purple-200 {
+    background-color: #e9d5ff !important;
+  }
+  
+  .group:hover .group-hover\:bg-white {
+    background-color: #ffffff !important;
+  }
+  
+  .group:hover .group-hover\:from-blue-200 {
+    --tw-gradient-from: #bfdbfe !important;
+    --tw-gradient-to: rgb(191 219 254 / 0) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+  }
+  
+  .group:hover .group-hover\:to-purple-200 {
+    --tw-gradient-to: #e9d5ff !important;
+  }
+
+  /* Framer Motion hover states for "How It Works" section */
+  .hover\:from-blue-600:hover {
+    background-image: linear-gradient(to bottom right, #2563eb, #1d4ed8) !important;
+  }
+}

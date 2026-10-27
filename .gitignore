@@ -1,0 +1,28 @@
+# secrets
+.env
+*.env
+!.env.example
+
+# python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# node
+node_modules/
+dist/
+
+# large data and downloaded models
+*.ckpt
+*.pt
+*.pth
+pretrained_models/
+datasets/
+data/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+structure.txt
