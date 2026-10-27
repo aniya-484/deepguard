@@ -2,6 +2,30 @@
 
 DeepGuard detects manipulated **images, audio and video** and explains each verdict in a web interface. It was built as a Final Year Project (BS Software Engineering, COMSATS University Islamabad, Lahore, 2026) by a team of three.
 
+![DeepGuard home page](docs/screenshots/home.png)
+
+## System architecture
+
+![System architecture](docs/screenshots/architecture.png)
+
+## Screenshots
+
+**Image detector:** per-image verdict with confidence.
+
+![Image detector](docs/screenshots/image-detector.png)
+
+**Audio detector:** verdict and confidence for each file.
+
+![Audio detector](docs/screenshots/audio-detector.png)
+
+**Video detector:** upload and verdict summary.
+
+![Video detector](docs/screenshots/video-detector.png)
+
+**Video analysis:** combined verdict from 16 sampled frames and the extracted audio, with per-frame confidence.
+
+![Video analysis](docs/screenshots/video-analysis.png)
+
 ## Results
 
 | Component | Model | Result |
@@ -84,4 +108,3 @@ frontend/   React interface (upload pages, results, chatbot)
 - Detection is face-based and relies on a Haar cascade, which can miss faces at extreme angles or low resolution.
 - The audio model analyses the first 4 seconds of speech.
 - The API currently allows all CORS origins and has no authentication, so it is intended for local demonstration, not public deployment.
-
